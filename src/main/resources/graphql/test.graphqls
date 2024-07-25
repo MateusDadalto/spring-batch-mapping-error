@@ -1,0 +1,11 @@
+type Mutation {
+    saveMany(input: [String!]!): [Foo!]!
+}
+
+type Query {
+    getMany: [Foo!]!
+}
+
+type Foo {
+    bar: String
+}
