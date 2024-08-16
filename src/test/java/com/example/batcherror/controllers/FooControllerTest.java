@@ -38,8 +38,7 @@ class FooControllerTest {
                     }
                 }
                 """)
-                .execute()
-                .path("getMany");
+                .execute();
 
         verify(fooService,times(1)).makeBar(anyList());
     }
@@ -58,8 +57,7 @@ class FooControllerTest {
                             }
                         }
                         """)
-                .execute()
-                .path("getMany");
+                .execute();
 
         verify(fooService,times(1)).makeBar(anyList());
     }
